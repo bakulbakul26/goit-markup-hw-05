@@ -27,7 +27,7 @@
         <div class="flex-nav">
           <span class="logo">Web</span><span class="logo2">Studio</span>
           <div class="link-nav">
-            <div class="nav-button"><a class="link" href="index.html">Agencja</a></div>
+            <div class="nav-button"><a class="link-active" href="index.html">Agencja</a></div>
             <div class="nav-button"><a class="link" href="portfolio.html">Portfolio</a></div>
             <div class="nav-button"><a class="link" href="#">Kontakt</a></div>
           </div>
@@ -59,10 +59,10 @@
           DLA WASZEGO BIZNESU
         </h1>
 
-        <button class="order">Zamów usługe</button>
+        <button class="order button-open" type="button" data-modal-open>Zamów usługe</button>
       </section>
 
-      <section class="section-top">
+      <section class="section">
         <div class="container article wrap">
           <div>
             <div class="icon-padding">
@@ -119,33 +119,42 @@
         </div>
       </section>
 
-      <section class="section foto">
+      <section class="foto">
         <div class="container wrap">
-          <h2 class="foto3">Czym sie zajmujemy</h2>
+          <h2 class="section-header">Czym sie zajmujemy</h2>
           <div class="foto-flx-3">
-            <picture>
+            <picture class="box-title">
               <img
                 alt="someone writing on keyboard"
                 src="./images/img(4).jpg"
                 width="370"
                 height="294"
               />
+              <div class="overlay-box-title">
+                <p class="box-title-text">APLIKACJE KOMPUTEROWE</p>
+              </div>
             </picture>
-            <picture>
+            <picture class="box-title">
               <img
                 alt="someone use his phone near his laptop"
                 src="./images/img(1).jpg"
                 width="370"
                 height="294"
               />
+              <div class="overlay-box-title">
+                <p class="box-title-text">APLIKACJE MOBILNE</p>
+              </div>
             </picture>
-            <picture>
+            <picture class="box-title">
               <img
                 alt="someone looking at colour palette at his tablet"
                 src="./images/img(5).jpg "
                 width="370"
                 height="294"
               />
+              <div class="overlay-box-title">
+                <p class="box-title-text">ROZWIĄZANIA GRAFICZNE</p>
+              </div>
             </picture>
           </div>
         </div>
@@ -153,7 +162,7 @@
 
       <section class="section foto2">
         <div class="container wrap">
-          <h2>Nasz zespół</h2>
+          <h2 class="section-header">Nasz zespół</h2>
           <div class="foto2-flex-4 wrap">
             <article class="list-item">
               <img alt="person on 1" src="./images/img.jpg" width="270" height="260" />
@@ -161,22 +170,22 @@
                 <div class="titleimg">John Doe</div>
                 <div class="catalog">Poroduc Designer</div>
                 <div class="social-container">
-                  <a href="#"  class="social-icon">
+                  <a href="#" class="social-icon">
                     <svg class="icon-instagram-2" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </a>
-                  <a href="#"  class="social-icon">
+                  <a href="#" class="social-icon">
                     <svg class="icon-twitter-1" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </a>
-                  <a href="#"  class="social-icon">
+                  <a href="#" class="social-icon">
                     <svg class="icon-facebook-1" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
-                  <a href="#"  class="social-icon">
+                  <a href="#" class="social-icon">
                     <svg class="icon-linkedin-1" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -190,22 +199,22 @@
                 <div class="titleimg">John Doe</div>
                 <div class="catalog">Developer</div>
                 <div class="social-container">
-                  <a href="#"  class="social-icon">
+                  <a href="#" class="social-icon">
                     <svg class="icon-instagram-2" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </a>
-                  <a href="#"  class="social-icon">
+                  <a href="#" class="social-icon">
                     <svg class="icon-twitter-1" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </a>
-                  <a href="#"  class="social-icon">
+                  <a href="#" class="social-icon">
                     <svg class="icon-facebook-1" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
-                  <a href="#"  class="social-icon">
+                  <a href="#" class="social-icon">
                     <svg class="icon-linkedin-1" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -265,7 +274,6 @@
                     </svg>
                   </a>
                   <a href="#" class="social-icon">
-                
                     <svg class="icon-linkedin-1" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -318,7 +326,7 @@
 
     <footer class="foter">
       <div class="container">
-        <address>
+        <address class="font-style-normal">
           <span class="logo">Web</span><span class="logo3">Studio</span>
           <div class="data"><p>m.Warszawa, Aleje Jerozolimskie 21</p></div>
           <a class="link-contact-end" href="mailto:info@example.com">info@example.com</a> <br />
@@ -338,15 +346,12 @@
               </svg>
             </a>
             <a href="#" class="social-icon">
-              
               <svg class="icon-facebook-1" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </a>
-            <a href="#" class="social-icon">           
-
+            <a href="#" class="social-icon">
               <svg class="icon-linkedin-1" width="20" height="20">
-                
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
             </a>
@@ -354,5 +359,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-box">
+        <button class="button-close" data-modal-close>x</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
