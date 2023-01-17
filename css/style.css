@@ -201,7 +201,7 @@ footer .join-text {
 }
 
 .link {
-  color: #212121;
+   color:var(--grey-heading);
   font-family: roboto;
   font-weight: 500;
   font-size: 14px;
