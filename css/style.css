@@ -201,7 +201,7 @@ footer .join-text {
 }
 
 .link {
-   color:var(--grey-heading);
+   color:var(--black);
   font-family: roboto;
   font-weight: 500;
   font-size: 14px;
@@ -661,9 +661,11 @@ img {
   font-size: 19px;
   border-radius: 50%;
   line-height: 22px;
-  height: 30px;
+  height: 31px;
   width: 30px;
   background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
 }
