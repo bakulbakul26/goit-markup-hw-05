@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.link-active body{
+  font-family: roboto;
+}
+
 .foto {
   background-color: var(--white);
   padding-bottom: 94px;
@@ -213,7 +217,8 @@ footer .join-text {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) .;
 }
 
-.link-active {
+.link-active  {
+  
   text-decoration: none;
   font-style: normal;
   font-weight: bold;
@@ -661,13 +666,13 @@ img {
   font-size: 19px;
   border-radius: 50%;
   line-height: 22px;
-  height: 30px;
+  
   width: 30px;
   background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  margin: 6px;
+  
 
 
 }
